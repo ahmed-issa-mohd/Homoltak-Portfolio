@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="img/tryckfavicon.webp" type="image/x-icon">
+  <link rel="stylesheet" href="css/all.min.css" />
+  <link rel="stylesheet" href="css/slick.css" />
+  <link rel="stylesheet" href="css/slick-theme.css" />
+  <link rel="stylesheet" href="css/slide.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <title>Welcome To HOMOLTAK</title>
+</head>
+
+<body>
+  <div id="overlay"></div>
+  <div class="loader-mask">
+    <div class="loader">
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+  <button type="button" class="btn" id="btn-back-to-top">
+    <i class="fa-solid fa-circle-arrow-up fa-2xl" style="color: #00a7bd"></i>
+  </button>
+  <!-- Header -->
+  <header>
+    <div class="container" id="container">
+      <div id="branding"><a href="index.html"><img src="img/web-logo.png" alt="logo" id="logo"></a>
+      </div>
+      <div class="menu-btn">
+        <i class="fa-solid fa-bars fa-xl" style="color: #008686;"></i>
+      </div>
+      <ul class="menu">
+        <li><a href="index.html"> <i class="fa-solid fa-house" style="color: #f37223; padding: 0 .5rem;"></i>
+            <span data-i18n="home"></span></a></li>
+        <li><a href="#about"><i class="fa-solid fa-address-card" style="color: #f37223; padding: 0 .5rem;"></i> <span
+              data-i18n="about">
+            </span></a></li>
+        <li><a href="#services"><i class="fa-solid fa-truck-front" style="color: #f37223; padding: 0 .5rem; "></i><span
+              data-i18n="services"> </span></a></li>
+        <li><a href="#contact"><i class="fa-solid fa-headset" style="color: #f37223; padding: 0 .5rem;"></i> <span
+              data-i18n="contact"></span></a></li>
+        <li>
+          <i class="fa-solid fa-earth-americas" style="color: #f37223; padding: 0 .5rem;"></i>
+          <select id="siteLanguage" style="border: 0;">
+            <option value="ar" data-i18n="arabic"> </option>
+            <option value="en" data-i18n="english"> </option>
+          </select>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <!-- Showcase  -->
+  <div class="showcase">
+    <div class="showcase-slider">
+      <div class="item item-1">
+        <div class="showcase-content">
+          <span id="element1"></span>
+          <p data-i18n="showcase_p1"></p>
+        </div>
+      </div>
+      <div class="item item-2">
+        <div class="showcase-content">
+          <h1 data-i18n="item_2_title"></h1>
+          <p data-i18n="showcase_p2"></p>
+        </div>
+      </div>
+      <div class="item item-3">
+        <div class="showcase-content">
+          <h1 data-i18n="item_3_title"></h1>
+          <p data-i18n="showcase_p4"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- vision -->
+  <div class="vision">
+    <div class="container">
+      <div>
+        <h1 class="section-title" data-i18n="vision_section_title"></h1>
+        <ul>
+          <li>
+            <p data-i18n="vision_section_p1"></p>
+          </li>
+          <li>
+            <p data-i18n="vision_section_p2"></p>
+
+          </li>
+          <li>
+            <p data-i18n="vision_section_p3">
+            </p>
+          </li>
+        </ul>
+      </div>
+      <img src="img/boarding1.svg" alt=" vision Picture" class="mover-img boarding1 " />
+    </div>
+  </div>
+  <div class="Mission">
+    <div class="container">
+      <img src="img/ما نطمح إليه (2).jpg" alt="" class="moيer-img" />
+      <div>
+        <h2 class="section-title" data-i18n="mission_section_title"></h2>
+        <p data-i18n="mission_section_p1">
+        </p>
+        <p data-i18n="mission_section_p2"></p>
+        <p data-i18n="mission_section_p3"></p>
+      </div>
+    </div>
+  </div>
+  <!-- Values -->
+  <div class="values">
+    <div class="container">
+      <h1 class="section-title" data-i18n="values_section_title"></h1>
+    </div>
+    <div class="container">
+      <div class="value">
+        <img src="img/Picture1.png" />
+        <p data-i18n="values_section_p1"></p>
+      </div>
+      <div class="value">
+        <img src="img/bulb-1179.svg" />
+        <p data-i18n="values_section_p2"></p>
+      </div>
+      <div class="value">
+        <img src="img/Picture3.png" />
+        <p data-i18n="values_section_p3"></p>
+      </div>
+      <div class="value">
+        <img src="img/Picture4.png" />
+        <p data-i18n="values_section_p4"></p>
+      </div>
+      <div class="value">
+        <img src="img/Picture5.png" />
+        <p data-i18n="values_section_p5"></p>
+      </div>
+      <div class="value">
+        <img src="img/Picture6.png" />
+        <p data-i18n="values_section_p6"></p>
+      </div>
+      <div class="value">
+        <img src="img/Picture7.png" />
+        <p data-i18n="values_section_p7"></p>
+      </div>
+    </div>
+  </div>
+  <!-- About US -->
+  <section id="about">
+    <div class="container">
+      <h1 class="section-title" data-i18n="about_section_title"></h1>
+      <div class="about-content">
+        <ul>
+          <li>
+            <p data-i18n="about_section_p1"></p>
+          </li>
+          <li class="about_section_p2">
+            <p data-i18n="about_section_p2"></p>
+          </li>
+          <li>
+            <p data-i18n="about_section_p3"></p>
+          </li>
+          <li>
+            <p data-i18n="about_section_p4"></p>
+          </li>
+          <li>
+            <p data-i18n="about_section_p5"></p>
+          </li>
+        </ul>
+        <img src="img/boarding2.svg" class="mover-img" />
+      </div>
+    </div>
+  </section>
+  <!-- App Section -->
+  <section id="app">
+    <div class="container">
+      <div class="content">
+        <h1 class="section-title" data-i18n="app_section_title"></h1>
+        <div class="app-text-slider">
+          <div class="item">
+            <h1> <span data-i18n="item_1_title"></span> <span class="accent" data-i18n="item_1_accent">
+              </span></h1>
+            <ol class="app_list">
+              <li>
+                <p data-i18n="app_item1_p1"></p>
+              </li>
+              <li>
+                <p data-i18n="app_item1_p2"></p>
+              </li>
+              <!-- <li>
+                <p data-i18n="app_item1_p3"></p>
+              </li> -->
+            </ol>
+
+          </div>
+          <div class="item">
+            <h2 style="color: #f37020" data-i18n="item_2_title2"></h2>
+            <ol class="app_list">
+              <li>
+                <p data-i18n="item2_p2"></p>
+              </li>
+              <li>
+                <p data-i18n="item2_p3"></p>
+              </li>
+            </ol>
+          </div>
+          <div class="item">
+            <span class="accent" data-i18n="app_item_p3_accent"></span>
+            <ol class="app_list">
+              <li>
+                <p data-i18n="app_item_p3"></p>
+              </li>
+              <li>
+                <p data-i18n="app_item_p4"></p>
+              </li>
+              </li>
+              <li>
+                <p data-i18n="app_item_p5"></p>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      <div class="image-container">
+        <img src="img/boarding3.svg" alt="App Picture" class="boarding3">
+      </div>
+    </div>
+  </section>
+  <!-- Services Tabs -->
+  <div class="services-tabs" id="services">
+    <div class="container">
+      <h1 class="section-title" data-i18n="services_tabs_section_title"></h1>
+      <p data-i18n="services_tabs_sub_heading1" class="services-tabs-sub-heading1 "></p>
+      <p data-i18n="services_tabs_sub_heading2" class="services-tabs-sub-heading2 service-text"></p>
+    </div>
+    <div class="container">
+      <div id="tab-1" class="tab-item ">
+        <a href="#service-content">
+          <i class="fa-solid fa-truck fa-2x"></i>
+          <p data-i18n="services_tabs_S1"></p>
+        </a>
+      </div>
+      <div id="tab-2" class="tab-item">
+        <a href="#service-content">
+          <i class="fa-solid fa-truck-pickup fa-3x"></i>
+          <p data-i18n="services_tabs_S2"></p>
+        </a>
+      </div>
+      <div id="tab-3" class="tab-item">
+        <a href="#service-content">
+          <i class="fa-solid fa-truck-fast fa-2x"></i>
+          <p data-i18n="services_tabs_S3"></p>
+        </a>
+      </div>
+      <div id="tab-4" class="tab-item">
+        <a href="#service-content">
+          <i class="fa-solid fa-truck-moving fa-2x"></i>
+          <p data-i18n="services_tabs_S4"></p>
+        </a>
+      </div>
+      <div id="tab-5" class="tab-item">
+        <a href="#service-content">
+          <i class="fa-solid fa-truck-arrow-right fa-2x"></i>
+          <p data-i18n="services_tabs_S5"></p>
+        </a>
+      </div>
+      <div id="tab-6" class="tab-item">
+        <a href="#service-content">
+          <i class="fa-solid fa-truck-droplet fa-2x"></i>
+          <p data-i18n="services_tabs_S6"></p>
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- Services  -->
+  <Section class="service-content" id="service-content">
+    <div class="container">
+      <!-- Tab 1 -->
+      <div id="tab-1-content" class="tab-content-item ">
+        <div class="tab-1-content-inner">
+          <ol>
+            <li>
+              <p data-i18n="tab1_p1"></p>
+            </li>
+            <li>
+              <p data-i18n="tab1_p2"></p>
+            </li>
+            <li>
+              <p data-i18n="tab1_p3"></p>
+            </li>
+            <li>
+              <p data-i18n="tab1_p4"></p>
+            </li>
+            <li>
+              <p data-i18n="tab1_p5"></p>
+            </li>
+            <li>
+              <p data-i18n="tab1_p6"> </p>
+            </li>
+            <li>
+              <p data-i18n="tab1_p7"></p>
+            </li>
+            <li>
+              <p data-i18n="tab1_p8"></p>
+            </li>
+            <li>
+              <p data-i18n="tab1_p9"></p>
+            </li>
+            <li>
+              <p data-i18n="tab1_p10"></p>
+            </li>
+          </ol>
+        </div>
+      </div>
+      <!-- Tab 2 -->
+      <div id="tab-2-content" class="tab-content-item ">
+        <div class="tab-2-content-inner">
+          <ol>
+            <li>
+              <p data-i18n="tab2_p1"></p>
+            </li>
+            <li>
+              <p data-i18n="tab2_p2"></p>
+            </li>
+            <li>
+              <p data-i18n="tab2_p3"></p>
+            </li>
+            <li>
+              <p data-i18n="tab2_p4"></p>
+            </li>
+            <li>
+              <p data-i18n="tab2_p5"></p>
+            </li>
+            <li>
+              <p data-i18n="tab2_p6"></p>
+            </li>
+            <li>
+              <p data-i18n="tab2_p7"></p>
+            </li>
+            <li>
+              <p data-i18n="tab2_p8"></p>
+            </li>
+            <li>
+              <p data-i18n="tab2_p9"></p>
+            </li>
+            <li>
+              <p data-i18n="tab2_p10"></p>
+            </li>
+            <li>
+              <p data-i18n="tab2_p11"></p>
+            </li>
+            <li>
+              <p data-i18n="tab2_p12"></p>
+            </li>
+            <li>
+              <p data-i18n="tab2_p13"></p>
+            </li>
+            <li>
+              <p data-i18n="tab2_p14"></p>
+            </li>
+            <li>
+              <p data-i18n="tab2_p15"></p>
+            </li>
+            <li>
+              <p data-i18n="tab2_p16"></p>
+            </li>
+            <li>
+              <p data-i18n="tab2_p17"></p>
+            </li>
+          </ol>
+        </div>
+      </div>
+      <!-- Tab 3 -->
+      <div id="tab-3-content" class="tab-content-item ">
+        <div class="tab-3-content-inner">
+          <ol>
+            <li>
+              <p data-i18n="tab3_p1"></p>
+            </li>
+            <li>
+              <p data-i18n="tab3_p2"></p>
+            </li>
+            <li>
+              <p data-i18n="tab3_p3"></p>
+            </li>
+            <li>
+              <p data-i18n="tab3_p4"></p>
+            </li>
+            <li>
+              <p data-i18n="tab3_p5"></p>
+            </li>
+            <li>
+              <p data-i18n="tab3_p6"></p>
+            </li>
+            <li>
+              <p data-i18n="tab3_p7"></p>
+            </li>
+            <li>
+              <p data-i18n="tab3_p8"></p>
+            </li>
+          </ol>
+        </div>
+      </div>
+      <!-- Tab 4 -->
+      <div id="tab-4-content" class="tab-content-item">
+        <div class="tab-4-content-inner">
+          <ol>
+            <li>
+              <p data-i18n="tab4_p1"></p>
+            </li>
+            <li>
+              <p data-i18n="tab4_p2"></p>
+            </li>
+            <li>
+              <p data-i18n="tab4_p3"></p>
+            </li>
+            <li>
+              <p data-i18n="tab4_p4"></p>
+            </li>
+            <li>
+              <p data-i18n="tab4_p5"></p>
+            </li>
+            <li>
+              <p data-i18n="tab4_p6"></p>
+            </li>
+          </ol>
+        </div>
+      </div>
+      <!-- Tab 5 -->
+      <div id="tab-5-content" class="tab-content-item">
+        <div class="tab-5-content-inner">
+          <ol>
+            <li>
+              <p data-i18n="tab5_p1"></p>
+            </li>
+            <li>
+              <p data-i18n="tab5_p2"></p>
+            </li>
+            <li>
+              <p data-i18n="tab5_p3"></p>
+            </li>
+            <li>
+              <p data-i18n="tab5_p4"></p>
+            </li>
+          </ol>
+        </div>
+      </div>
+      <!-- Tab 6 -->
+      <div id="tab-6-content" class="tab-content-item">
+        <div class="tab-6-content-inner">
+          <ol>
+            <li>
+              <p data-i18n="tab6_p1"></p>
+
+            </li>
+            <li>
+
+              <p data-i18n="tab6_p2"></p>
+
+            </li>
+            <li>
+
+              <p data-i18n="tab6_p3"></p>
+
+            <li>
+
+              <p data-i18n="tab6_p4"></p>
+
+            </li>
+            <li>
+              <p data-i18n="tab6_p5"></p>
+
+            </li>
+            <li>
+              <p data-i18n="tab6_p6"></p>
+
+            </li>
+            <li>
+              <p data-i18n="tab6_p7"></p>
+
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </Section>
+  <!-- Contact Us Form -->
+  <section class="contact-us" id="contact">
+    <div class="container">
+      <h1 class="brand" data-i18n="brand"> </h1>
+      <div class="wrapper animate__animated animate__bounceInRight">
+        <div class="company-info" style="position: relative;">
+          <h3 data-i18n="company_info_title"> </h3>
+          <ul>
+            <li><i class="fa-solid fa-road"></i>
+              <span data-i18n="company_info_street"> </span>
+            </li>
+            <li> <i class="fa-solid fa-phone" data-i18n="company_info_mibile"></i> <span
+                style="padding: 10px;">06-2221445</span>
+            </li>
+            <li><i class="fa-solid fa-envelope" data-i18n="company_info_mail"></i> support@homoltak.com</li>
+          </ul>
+          <div class="social-icons">
+            <a href="https://web.facebook.com/hmoltak?mibextid=ZbWKwL&_rdc=1&_rdr" target="_blank"><i
+                class="fa-brands fa-facebook fa-2xl" style="color: #ffffff;"></i></a>
+            <a href="#"> <i class="fa-brands fa-instagram fa-2xl" style="color: #ffffff;"></i></a>
+            <a aria-label="Chat on WhatsApp" href="https://wa.me/962782762762" target="_blank"> <i
+                class="fa-brands fa-whatsapp fa-2xl" style="color: #ffffff;"></i></a>
+          </div>
+        </div>
+        <div class="contact">
+          <h3 class="title" data-i18n="title"> </h3>
+          <form action="#">
+            <p>
+              <label for="name" data-i18n="name"> </label>
+              <input type="text" name="name" id="name" required />
+            </p>
+            <p>
+              <label for="email" data-i18n="email"> </label>
+              <input type="email" name="email" id="email" required />
+            </p>
+            <p>
+              <label for="phone" data-i18n="mobile"> </label>
+              <input type="text" name="phone" id="phone" required />
+            </p>
+            <p>
+              <label for="location" data-i18n="location"> </label>
+              <input type="text" name="location" id="location" required />
+            </p>
+
+            <p class="full">
+              <label for="message" data-i18n="message"> </label>
+              <textarea name="message" id="message" rows="5" required></textarea>
+            </p>
+            <p class="full">
+            <div class="g-recaptcha" data-sitekey="6Lel4Z4UAAAAAOa8LO1Q9mqKRUiMYl_00o5mXJrR"></div>
+            <button data-i18n="sendBtn"> </button>
+
+            </p>
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-top">
+        <p data-i18n="footer_p">
+          <a target="_self" class="accent" href="Privacy.html" data-i18n="footer_a"></a>
+        </p>
+        <a target="_blank" class="accent" href="PrivacyPolicyAr.pdf" data-i18n="footer_a" id='privacLink'>
+        </a>
+      </div>
+      <a href="https://play.google.com/store/games?hl=en_US" target="_blank"> <img src="img/playstore.png"></a>
+      <a href="https://www.apple.com/jo/app-store/" target="_blank"> <img src="img/appstore.png"></a>
+    </div>
+  </footer>
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="js/slick.min.js"></script>
+  <script src="js/script.js" type="module" defer></script>
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script>
+
+  </script>
+</body>
+
+</html>

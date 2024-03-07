@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/slick-theme.css" />
+    <link rel="stylesheet" href="css/slide.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/contract.css">
+    <title>Welcome To HOMOLTAK</title>
+    <style>
+        .red {
+            color: red
+        }
+    </style>
+</head>
+
+<body>
+    <button type="button" class="btn" id="btn-back-to-top">
+        <i class="fa-solid fa-circle-arrow-up fa-2xl" style="color: #00a7bd"></i>
+    </button>
+    <!-- Header -->
+    <!-- Header -->
+    <header>
+        <div class="container" id='container'>
+            <div id="branding">
+                <a href="index.html"><img src="img/web-logo.png" alt="logo" id='logo' /></a>
+            </div>
+            <div class="menu-btn">
+                <i class="fa-solid fa-bars fa-xl" style="color: #008686;"></i>
+            </div>
+            <ul class="menu">
+                <li><a href="/" data-i18n="home">الرئيسية</a></li>
+                <li><a href="#about" data-i18n="about">من نحن</a></li>
+                <li><a href="#services" data-i18n='services'>خدماتنا</a></li>
+                <li><a href="#contact" data-i18n='contact'>تواصل معنا</a></li>
+                <!-- <li><a href="contract.html" data-i18n='contract'>التعاقد</a></li> -->
+                <li>
+                    <select id="siteLanguage">
+                        <option value="ar" data-i18n="arabic">العربية</option>
+                        <option value="en" data-i18n="english">الانجليزية</option>
+                    </select>
+                </li>
+            </ul>
+
+        </div>
+    </header>
+    <!-- contract section -->
+    <section class="contract">
+        <img src="img/bussinessHome.png" class="homeImg" id="homeImg">
+        <div class="container">
+            <div class="form-container">
+                <form action="#" class="formContainer" onsubmit="emailSend(); reset() ; return false;">
+                    <p style="font-size: 24px; color: #666666; text-align: center;">
+                        التعاقد&lrm;
+                    </p>
+                    <div>
+                        <label class="fieldLable" for="exampleInputName">
+                            اسم الشركة </label>
+                        <input type="text" class="form-control" name="name" style="height: 50px;" id="name"
+                            placeholder="ادخل اسم الشركة الخاصة بك">
+                    </div>
+                    <div>
+                        <label class="fieldLable" for="exampleFullEmail">
+                            نوع النقل </label>
+                        <select class="form-control selectItem" id="select1">
+                            <option disabled hidden selected>Select</option>
+                            <option value="عرض سعر&lrm; " id="op1">نقل مفتوح&lrm; </option>
+                            <option value="طلب تعاقد&lrm;" id="op2">نقل مقلق&lrm;</option>
+
+                        </select>
+                    </div>
+                    <div>
+                        <label class="fieldLable" for="exampleFullEmail">
+                            حجم المركبة </label>
+                        <input type="text" name="mobile" class="form-control" style="height: 50px;" id="size"
+                            placeholder="أدخل حجم المركبة ">
+                    </div>
+                    <div>
+                        <label class="fieldLable" for="exampleFullEmail">
+                            شكل التعاقد </label>
+                        <select class="form-control selectItem" id="exampleFormControlSelect1">
+                            <option disabled hidden selected>Select</option>
+                            <option value="عرض سعر&lrm; ">عقد محدد المدة&lrm; </option>
+                            <option value="طلب تعاقد&lrm;">عقد دائم&lrm;</option>
+
+                        </select>
+                    </div>
+                    <div>
+                        <label class="fieldLable" for="exampleFullEmail">
+                            رقم الجوال </label>
+                        <input type="text" name="mobile" class="form-control" style="height: 50px;" id="mobile"
+                            placeholder="أدخل رقم الجوال ">
+                    </div>
+                    <div>
+                        <label class="fieldLable" for="exampleFullEmail">
+                            عدد السيارات المطلوبة </label>
+                        <input type="text" name="mobile" class="form-control" style="height: 50px;" id="cars"
+                            placeholder="أدخل عدد السيارات  ">
+                    </div>
+                    <div class="btnContainer">
+                        <button type="submit" class="btn" style="width: 100%;">
+
+                            ارسال&lrm; </button>
+                    </div>
+                </form>
+            </div>
+            <div class="text-container">
+                <h1 class="heading1">
+                    نسخر كافة الإمكانات والموارد المتاحة لجعل عملية الوصول الى ناقل ثقة لنقل البضائع ميسرة وسريعة وفي
+                    الوقت المحدد وغاية في الأمان إلى كل مكان في المملكة الاردنية الهاشمية، مهما كانت الوجهة أو نوع
+                    الحمولة، نحن هنا للتأكد من نقل وتوصيل منتجاتكم وبضائعكم إلى وجهتها كيف ما كانت الظروف
+
+                </h1>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <div class=" container">
+            <div class="footer-top">
+                <p data-i18n="footer_p">
+                    حمولتك ©. جميع الحقوق محفوظة. |
+                    <a target="_self" class="accent" href="Privacy.html" data-i18n="footer_a"> سياسة الخصوصية </a>
+                </p>
+                <a target="_blank" class="accent" href="PrivacyPolicyAr.pdf" data-i18n="footer_a" id='privacLink'> سياسة
+                    الخصوصية </a>
+            </div>
+            <a href="#"> <img src="img/playstore.png"></a>
+        </div>
+    </footer>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script src="js/script.js" type="module"></script>
+    <script src="js/scriptContract.js" type="module"></script>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+    <script src="js/email.js"></script>
+</body>
+
+</html>
